@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GallosAyala - Razas de Gallos de Pelea</title>
+    <style>
+        /* --- ESTILOS GENERALES (CSS) --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        /* Encabezado */
+        header {
+            background: linear-gradient(135deg, #1f0303 0%, #000000 100%);
+            border-bottom: 3px solid #b71c1c;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #ffeb3b;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        }
+
+        header p {
+            color: #b71c1c;
+            font-weight: bold;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+        }
+
+        /* Contenedor Principal */
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        /* Sección de Introducción */
+        .intro {
+            background-color: #1e1e1e;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 5px solid #ffeb3b;
+            margin-bottom: 3rem;
+        }
+
+        .intro h2 {
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Grid de Razas */
+        .grid-razas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        /* Tarjeta de Raza */
+        .tarjeta-gallo {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .tarjeta-gallo:hover {
+            transform: translateY(-5px);
+            border-color: #b71c1c;
+        }
+
+        /* Marcador de posición para las imágenes */
+        .gallo-img-placeholder {
+            width: 100%;
+            height: 220px;
+            background: linear-gradient(45deg, #2c2c2c, #1f0303);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #777;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-bottom: 2px solid #b71c1c;
+        }
+
+        .tarjeta-info {
+            padding: 1.5rem;
+        }
+
+        .tarjeta-info h3 {
+            color: #ffeb3b;
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+            border-bottom: 1px solid #333;
+            padding-bottom: 0.3rem;
+        }
+
+        .origen {
+            font-size: 0.9rem;
+            color: #b71c1c;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        /* Características de la raza */
+        .caracteristicas {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .caracteristicas li {
+            font-size: 0.9rem;
+            margin-bottom: 0.4rem;
+            padding-left: 1.2rem;
+            position: relative;
+        }
+
+        .caracteristicas li::before {
+            content: "⚡";
+            position: absolute;
+            left: 0;
+            color: #ffeb3b;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #0a0a0a;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 4rem;
+            border-top: 1px solid #222;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Gallos Ayala</h1>
+        <p>Enciclopedia Virtual de Razas de Combate</p>
+    </header>
+
+    <div class="container">
+        
+        <section class="intro">
+            <h2>Líneas de Sangre y Genética</h2>
+            <p>Explora las características físicas, el origen histórico y las cualidades de combate de las razas y líneas de gallos finos más influyentes del mundo.</p>
+        </section>
+
+        <main class="grid-razas">
+            
+            <!-- Raza 1: Sweater -->
+            <article class="tarjeta-gallo">
+                <div class="gallo-img-placeholder">Imagen de Sweater</div>
+                <div class="tarjeta-info">
+                    <h3>Sweater</h3>
+                    <div class="origen">Origen: Estados Unidos</div>
+                    <p>Una de las razas más populares y dominantes en los torneos modernos debido a su agilidad y velocidad en la arena.</p>
+                    <ul class="caracteristicas">
+                        <li>Plumaje amarillo-colorado o naranja brillante.</li>
+                        <li>Estilo de combate muy rápido y agresivo por arriba.</li>
+                        <li>Patas amarillas y complexión espigada.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Raza 2: Kelso -->
+            <article class="tarjeta-gallo">
+                <div class="gallo-img-placeholder">Imagen de Kelso</div>
+                <div class="tarjeta-info">
+                    <h3>Kelso</h3>
+                    <div class="origen">Origen: Estados Unidos</div>
+                    <p>Famosos por su alta inteligencia en combate, los gallos Kelso saben defenderse bien y contraatacar en el momento preciso.</p>
+                    <ul class="caracteristicas">
+                        <li>Plumaje colorado oscuro o lomos amarillos.</li>
+                        <li>Combaten tanto por arriba como a ras de piso.</li>
+                        <li>Gran resistencia física y alta puntería.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Raza 3: Asil -->
+            <article class="tarjeta-gallo">
+                <div class="gallo-img-placeholder">Imagen de Asil</div>
+                <div class="tarjeta-info">
+                    <h3>Asil</h3>
+                    <div class="origen">Origen: India / Pakistán</div>
+                    <p>Una de las razas orientales más antiguas y puras. Destacan por su fuerza física descomunal y su estructura ósea densa.</p>
+                    <ul class="caracteristicas">
+                        <li>Cuerpo sumamente musculoso y plumas rígidas.</li>
+                        <li>Estilo de combate lento pero de golpes devastadores.</li>
+                        <li>Especiales para cruces genéticos para aportar fuerza.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Raza 4: Hatch -->
+            <article class="tarjeta-gallo">
+                <div class="gallo-img-placeholder">Imagen de Hatch</div>
+                <div class="tarjeta-info">
+                    <h3>Hatch</h3>
+                    <div class="origen">Origen: Estados Unidos</div>
+                    <p>Conocidos por su poder, empuje y coraje inquebrantable. Son aves de combate pesado que no dan un paso atrás.</p>
+                    <ul class="caracteristicas">
+                        <li>Plumaje colorado oscuro tirando a negro.</li>
+                        <li>Patas verdes o amarillas (según la sublínea).</li>
+                        <li>Estilo de combate directo, violento y con mucha fuerza.</li>
+                    </ul>
+                </article>
+
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 GalloSoberano. Contenido estrictamente informativo y cultural sobre avicultura y genética fina.</p>
+    </footer>
+
+</body>
+</html>
